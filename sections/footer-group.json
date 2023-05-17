@@ -1,53 +1,111 @@
 {
-  "name": "t:sections.footer.name",
   "type": "footer",
+  "name": "Footer group",
   "sections": {
-    "footer": {
-      "type": "footer",
+    "text-with-icons": {
+      "type": "text-with-icons",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "free-shipping": {
+          "type": "item",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "title": "Free shipping",
+            "content": "<p>Tell your customers about your shipping offer.<\/p>"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "customer-support": {
+          "type": "item",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "title": "Customer service",
+            "content": "<p>Tell your customers how they can reach you.<\/p>"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "discount": {
+          "type": "item",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "title": "Refer a friend",
+            "content": "<p>Tell your customers about your promotional offers.<\/p>"
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "title": "Secure payment",
+            "content": "<p>Tel your customers about your payment methods.<\/p>"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "free-shipping",
+        "customer-support",
+        "discount",
+        "payment"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "image_width": 150,
+            "heading_size": "h3",
+            "title": "Sign up for new stories and personal offers"
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "About",
+            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "links",
+        "text"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_country_flag": true,
+        "show_country_name": true,
+        "show_locale_selector": true
       }
     }
   },
   "order": [
+    "text-with-icons",
     "footer"
   ]
 }
